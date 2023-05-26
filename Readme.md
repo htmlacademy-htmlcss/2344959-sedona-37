@@ -1,8 +1,8 @@
 # Личный проект «Седона»
 
 * Студент: [Tatiana Mathy](https://up.htmlacademy.ru/htmlcss/37/user/2344959).
-* Наставник: `Неизвестно`.
-
+* Наставник: [Ирина Малиновская](https://htmlacademy.ru/profileirina-malinovskaya).
+--
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
