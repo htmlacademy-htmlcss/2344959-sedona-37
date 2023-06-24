@@ -9,7 +9,7 @@
 <body>
         <header class="page-header">
       <nav class="navigation">
-        <a class="navigation-logo" href="https://htmlacademy.ru/">
+        <a class="navigation-logo">
           <img class="page-header-logo" src="images/logo.svg" width="140" height="70" alt="Логотип Седона">
         </a>
         <ul class="navigation-list">
@@ -17,10 +17,10 @@
             <a class="navigation-link" href="#">Главная</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="catalog.html">О Седоне</a>
+            <a class="navigation-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Гостиницы</a>
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
         <ul class="navigation-list">
@@ -42,9 +42,11 @@
     </header>
     <main class="main-index">
       <h1 class="visually-hidden">Седона</h1>
+      <section>
+        <figure>
       <img src="images/welcome.svg" width="458" height="352" alt="Дорбро пожаловать в Седону">
-      <img src="images/general-images.jpg" width="1200" height="485" alt="Скалы в Седоне">
-
+        </figure>
+      </section>
       <section class="advantages">
       <h2>Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
       <p class="advantages-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
@@ -104,10 +106,13 @@
               но и настоящего местного производства!</p>
           </li>
         </ul>
+      </section>
+      <section>
         <h3 class="appointment-description">Заинтересовались?</h3>
         <p>Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <button class="button" type="submit">Поиск гостиницы в Седоне</button>
+          <a class="button" type="submit">Поиск гостиницы в Седоне</a>
       </section>
+
       <section class="appointment">
         <img src="images/background-images1.jpg" width="1200" height="414" alt="фоновая картинка для подписки">
         <h2 class="appointment-title">Подпишитесь на рассылку</h2>
@@ -117,12 +122,11 @@
             <label class="form-label" for="appointment-email"></label>
             <input type="text" id="appointment-email" name="appointment-email" placeholder="Ваш email">
           </p>
-            <button class="button" type="submit">Подписаться</button>
+            <a class="button" type="submit">Подписаться</a>
           </form>
-          </section>
+         </section>
     </main>
     <footer class="page-footer">
-
         <ul class="footer-social-list">
           <li class="footer-social-item">
             <svg width="24" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -157,8 +161,6 @@
           <path d="M98.2 18.7232C96.6 18.7232 95.3 19.5232 94.6 20.7232H94.5C93.9 19.5232 92.7 18.7232 91.1 18.7232C89.7 18.7232 88.6 19.4232 88 20.5232V19.0232H86.1V29.6232H88.1V24.2232C88.1 22.2232 89.1 20.8232 90.7 20.7232C92.2 20.7232 93.1 21.7232 93.1 23.3232V29.6232H95.1V24.0232C95.1 21.6232 96.5 20.7232 97.7 20.7232C99.2 20.7232 100.1 21.7232 100.1 23.3232V29.6232H102.1V23.1232C102.2 20.5232 100.7 18.7232 98.2 18.7232Z" fill="black"/>
           <path d="M109.4 27.8232L105.8 18.9232H103.6L108.4 30.5232C108.1 31.4232 107.7 31.7232 106.7 31.7232H104.2V33.7232H106.7C108.5 33.7232 109.5 32.9232 110.2 31.1232L114.9 18.9232H112.8L109.4 27.8232Z" fill="black"/>
           </svg>
-
-
     </footer>
   </body>
 
