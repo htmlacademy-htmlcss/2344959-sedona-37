@@ -42,11 +42,12 @@
 
     <main class="main-inner">
 
-      <div>
+      <div class="inner-header-hotels">
 
       <header class="inner-header">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
-        <img src="images/background-images2.jpg" width="1200" height="412" alt="фоновое изображение гостиницы Седоны">
+
+
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="index.html">Главная</a>
@@ -55,6 +56,7 @@
             <a class="breadcrumbs-link">Каталог</a>
           </li>
         </ul>
+
       </header>
 
 
@@ -95,7 +97,7 @@
             <label class="control">
               <input class="control-input" type="radio" name="product-group" value="shaving-supplies">
 
-          Гостиницы
+          Гостиница
             </label>
           </li>
           <li class="catalog-filter-item">
@@ -115,14 +117,14 @@
         </ul>
       </fieldset>
           <button class="button" type="submit">Применить</button>
-          <a class="button" href="#">Сбросить</a>
+          <button class="button" href="#">Сбросить</button>
         </form>
 
       </div>
 
       <section class="catalog-products">
 
-        <p>Найдено гостиниц:38</p>
+        <h2 class="catalog-products-title">Найдено гостиниц:38</h2>
 
         <select class="select-control" aria-label="Сортировка">
           <option value="cheap">Сначала дешёвые</option>
@@ -179,14 +181,14 @@
             </a>
             </div>
 
-        <div>
+
         <ul class="hotel-list">
           <li class="hotel-card">
           <a href="product.html">
           <img src="images/hotel-1.jpg" width="300" height="212" alt="гостиница Amara Resort & Spa">
           </a>
           <a href="product.html">
-          <h3>Amara Resort & Spa
+          <h3 class="hotel-list-title">Amara Resort & Spa
           </h3>
           </a>
           <p>Гостиница</p>
@@ -203,7 +205,7 @@
             <img src="images/hotel-2.jpg" width="300" height="212" alt="гостиница Villas at Poco Diablo">
           </a>
           <a href="product.html">
-            <h3>Villas at Poco Diablo</h3>
+            <h3 class="hotel-list-title">Villas at Poco Diablo</h3>
           </a>
             <p>Гостиница</p>
             <p>От 5000 ₽</p>
@@ -219,7 +221,7 @@
               <img src="images/hotel-3.jpg" width="300" height="212" alt="гостиница Desert Quail Inn">
             </a>
             <a href="product.html">
-              <h3>Desert Quail Inn</h3>
+              <h3 class="hotel-list-title">Desert Quail Inn</h3>
             </a>
               <p>Гостиница</p>
               <p>От 2500 ₽</p>
@@ -235,7 +237,7 @@
                 <img src="images/hotel-4.jpg" width="300" height="212" alt="гостиница GreenTree Inn">
               </a>
               <a href="product.html">
-                <h3>GreenTree Inn</h3>
+                <h3 class="hotel-list-title">GreenTree Inn</h3>
               </a>
                 <p>Гостиница</p>
                 <p>От 1500 ₽</p>
@@ -247,41 +249,31 @@
                 </p>
                </li>
                </ul>
-              </div>
+
 
            <ul class="pagination">
             <li class="pagination-item">
-            <a class="pagination-button" href="#" type="button">
-              <span class="visually-hidden">гостиница-1</span>
-            </a>
+            <a class="pagination-button pagination-current" href="#">1</a>
+            </li>
+           <li class="pagination-item">
+            <a class="pagination-button" href="#">2</a>
            </li>
            <li class="pagination-item">
-            <a class="pagination-button" href="#" type="button">
-              <span class="visually-hidden">гостиница-2</span>
-            </a>
-           </li>
-           <li class="pagination-item">
-            <a class="pagination-button" href="#" type="button">
-              <span class="visually-hidden">гостиница-3</span>
-            </a>
+            <a class="pagination-button" href="#">3</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-button" href="#" type="button">
-              <span class="visually-hidden">гостиница-4</span>
-            </a>
+            <a class="pagination-button" href="#">4</span></a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-button" href="#" type="button">
-              <span class="visually-hidden">гостиница-10</span>
-            </a>
+            <a class="pagination-button" href="#">10</a>
           </li>
         </ul>
        </section>
 
-       <section class="appointment">
-        <h2 class="appointment-title">Подпишитесь на рассылку</h2>
-        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
+       <section class="catalog-appointment">
+        <h2 class="catalog-appointment-title">Подпишитесь на рассылку</h2>
+        <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <form class="catalog-appointment-form" action="https://echo.htmlacademy.ru/" method="post">
             <p class="appointment-form-date">
             <label class="form-label" for="appointment-email"></label>
             <input type="text" id="appointment-email" name="appointment-email" placeholder="Ваш email">
@@ -294,7 +286,6 @@
        </main>
 
        <footer class="page-footer">
-        <section class="footer-social">
           <ul class="footer-social-list">
             <li class="footer-social-item">
               <svg width="24" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -329,7 +320,6 @@
             <path d="M98.2 18.7232C96.6 18.7232 95.3 19.5232 94.6 20.7232H94.5C93.9 19.5232 92.7 18.7232 91.1 18.7232C89.7 18.7232 88.6 19.4232 88 20.5232V19.0232H86.1V29.6232H88.1V24.2232C88.1 22.2232 89.1 20.8232 90.7 20.7232C92.2 20.7232 93.1 21.7232 93.1 23.3232V29.6232H95.1V24.0232C95.1 21.6232 96.5 20.7232 97.7 20.7232C99.2 20.7232 100.1 21.7232 100.1 23.3232V29.6232H102.1V23.1232C102.2 20.5232 100.7 18.7232 98.2 18.7232Z" fill="black"/>
             <path d="M109.4 27.8232L105.8 18.9232H103.6L108.4 30.5232C108.1 31.4232 107.7 31.7232 106.7 31.7232H104.2V33.7232H106.7C108.5 33.7232 109.5 32.9232 110.2 31.1232L114.9 18.9232H112.8L109.4 27.8232Z" fill="black"/>
             </svg> </a>
-        </section>
       </footer>
   </body>
 </html>
