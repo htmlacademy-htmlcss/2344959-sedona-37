@@ -14,7 +14,10 @@
     font-display: swap;
     }
 
+
     body {
+      display: flex;
+      flex-direction: column;
       font-family: "PT Sans", sans-serif;
       font-size: 18px;
       line-height: 21px;
@@ -33,10 +36,21 @@
       text-transform: uppercase;
     }
     .page-header {
+
       color: #ffffff;
       background-color: #ffffff;
     }
-    .navigation-link {
+
+    .navigation {
+      display: flex;
+      width: 1200px;
+      margin: 0 auto;
+    }
+
+    .navigation-list {
+      margin: 30;
+      padding: 16;
+      width: 360px;
       font-family: "PT Sans" , sans-serif;
       line-height: 24px;
       font-weight: 700;
@@ -44,10 +58,29 @@
       background-color: #ffffff;
       text-transform: capitalize;
     }
+    .navigation-user {
+      width: 270px;
+      font-size: 16px;
+      font-family: PT Sans;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 20px;
+      text-transform: uppercase;
+      margin-right: 0 auto;
 
+    }
+    .navigation-logo {
+      margin-right: auto;
+    }
+    .page-container {
+
+      margin: 0 auto;
+      width: 1200px;
+    }
 
 
     .welcome{
+
       text-align: center;
       color: #000000;
       background-color: #ffffff;
@@ -69,6 +102,24 @@
       color: #000000;
       background-color: #ffffff;
     }
+    .advantages-list {
+      display: flex;
+      margin: 0;
+      flex-wrap: wrap;
+    }
+    .advantages-item {
+      width: 400px;
+      margin: 0;
+
+    }
+    .advantages-item-pic {
+      width: 800px;
+    }
+    .advantages-item-wrapper {
+      display: flex;
+      margin: 0;
+
+    }
 
     .advantages-description {
       font-weight: 700;
@@ -81,10 +132,14 @@
     }
 
     .services {
+      display: flex;
+      margin: 0;
       font-family: PT Sans, sans-serif;
       text-align: center;
       color: #000000;
       background-color: #ffffff;
+      width: 1200px;
+      flex-wrap: wrap;
     }
     .services-title {
       font-size: 30px;
@@ -94,6 +149,9 @@
     }
     .services-item-name {
       text-transform: uppercase;
+    }
+    .services-item{
+      width: 400px;
     }
     .services-description {
       font-size: 18px;
@@ -112,6 +170,7 @@
       line-height: 26px;
     }
     .appointment {
+      width: 1200px;
       font-family: PT Sans, sans-serif;
       text-align: center;
       color: #ffffff;
@@ -128,15 +187,23 @@
       text-transform: uppercase;
     }
     .page-footer {
+      width: 1200px;
       color: #000000;
       background-color: #ffffff;
     }
+    .page-footer-container {
+      display: flex;
+      width: 1200px;
+      margin: 0 auto;
+    }
+
     .footer-contacts-address-phone {
       color: #000000;
       background-color: #ffffff;
       font-size: 40px;
       line-height: 40px;
       text-transform: uppercase;
+
     }
 
     .page-header {
@@ -213,4 +280,17 @@
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
+}
+
+.inner-header-hotels{
+width: 1200px;
+
+
+}
+.hotel-list {
+  display: flex;
+  margin: 10px;
+}
+.pagination {
+
 }
