@@ -7,12 +7,13 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
 <body>
+  <div class="page-container">
         <header class="page-header">
       <nav class="navigation">
         <a class="navigation-logo">
           <img class="page-header-logo" src="images/logo.svg" width="140" height="70" alt="Логотип Седона">
         </a>
-        <ul class="navigation-list">
+        <ul class="navigation-list list-reset">
           <li class="navigation-item">
             <a class="navigation-link" href="#">Главная</a>
           </li>
@@ -23,7 +24,7 @@
             <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
-        <ul class="navigation-user">
+        <ul class="navigation-user list-reset">
           <li class="navigation-item">
             <a href="#"><svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M19.8928 18.0083L16.1928 14.3287C17.1928 13.0359 17.8928 11.3453 17.8928 9.4558C17.8928 5.08011 14.2928 1.5 9.89282 1.5C5.49282 1.5 1.89282 5.17956 1.89282 9.55525C1.89282 13.9309 5.49282 17.511 9.89282 17.511C11.6928 17.511 13.3928 16.9144 14.7928 15.8204L18.4928 19.5L19.8928 18.0083ZM9.89282 15.5221C6.59282 15.5221 3.89282 12.837 3.89282 9.55525C3.89282 6.27348 6.59282 3.5884 9.89282 3.5884C13.1928 3.5884 15.8928 6.27348 15.8928 9.55525C15.8928 12.837 13.1928 15.5221 9.89282 15.5221Z" fill="black"/>
@@ -42,8 +43,7 @@
         </ul>
       </nav>
     </header>
-  <main class="main-index">
-    <div class="page-container">
+  <main class=" main-container main-index">
       <h1 class="visually-hidden">Седона</h1>
 
       <section class="welcome">
@@ -55,8 +55,8 @@
       <section class="advantages">
       <h2 class="advantages-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
       <p class="advantages-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
-      <ul class="advantages-list">
-       <li class="advantages-item">
+      <ul class="advantages-list list-reset">
+       <li class="advantages-item advantages-item-full">
         <div class="advantages-item-wrapper">
         <h3 class="advantages-item-name">Настоящий городок</h3>
         <p class="advantages-item-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
@@ -77,7 +77,7 @@
             <h3 class="advantages-item-name">Мало туристов</h3>
             <p class="advantages-item-text">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
-          <li class="advantages-item">
+          <li class="advantages-item advantages-item-full">
             <figure class="advantages-item-pic">
               <img src="images/photo-2.jpg" width="800" height="385" alt="Красные скалы Седоны">
             </figure>
@@ -92,7 +92,7 @@
       <section class="services">
         <p class="services-title"><span>Приезжайте в Седону отдохнуть в комфорте и уюте!</span></p>
         <p>Опытный персонал и качественное обслуживание!</p>
-        <ul class="services-list">
+        <ul class="services-list list-reset">
           <li class="services-item">
             <img src="images/house.svg" width="75" height="70" alt="жилье">
             <h3 class="services-item-name">Жильё</h3>
@@ -117,7 +117,7 @@
       <section class="search-hotels">
         <h3 class="appointment-description">Заинтересовались?</h3>
         <p>Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <a class="button" type="submit">Поиск гостиницы в Седоне</a>
+          <a class="button" href="#">Поиск гостиницы в Седоне</a>
       </section>
 
       <section class="appointment">
@@ -135,7 +135,7 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer-container">
-        <ul class="footer-social-list">
+        <ul class="footer-social-list list-reset">
           <li class="footer-social-item">
             <a href="#"><svg width="24" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M23.45 0.948C23.616 0.402 23.45 0 22.655 0H20.03C19.362 0 19.054 0.347 18.887 0.73C18.887 0.73 17.552 3.926 15.661 6.002C15.049 6.604 14.771 6.795 14.437 6.795C14.27 6.795 14.019 6.604 14.019 6.057V0.948C14.019 0.292 13.835 0 13.279 0H9.151C8.734 0 8.483 0.304 8.483 0.593C8.483 1.214 9.429 1.358 9.526 3.106V6.904C9.526 7.737 9.373 7.888 9.039 7.888C8.149 7.888 5.984 4.677 4.699 1.003C4.45 0.288 4.198 0 3.527 0H0.9C0.15 0 0 0.347 0 0.73C0 1.412 0.89 4.8 4.145 9.281C6.315 12.341 9.37 14 12.153 14C13.822 14 14.028 13.632 14.028 12.997V10.684C14.028 9.947 14.186 9.8 14.715 9.8C15.105 9.8 15.772 9.992 17.33 11.467C19.11 13.216 19.403 14 20.405 14H23.03C23.78 14 24.156 13.632 23.94 12.904C23.702 12.18 22.852 11.129 21.725 9.882C21.113 9.172 20.195 8.407 19.916 8.024C19.527 7.533 19.638 7.314 19.916 6.877C19.916 6.877 23.116 2.451 23.449 0.948H23.45Z" fill="#68A2CA"/>
@@ -169,8 +169,8 @@
           <path d="M98.2 18.7232C96.6 18.7232 95.3 19.5232 94.6 20.7232H94.5C93.9 19.5232 92.7 18.7232 91.1 18.7232C89.7 18.7232 88.6 19.4232 88 20.5232V19.0232H86.1V29.6232H88.1V24.2232C88.1 22.2232 89.1 20.8232 90.7 20.7232C92.2 20.7232 93.1 21.7232 93.1 23.3232V29.6232H95.1V24.0232C95.1 21.6232 96.5 20.7232 97.7 20.7232C99.2 20.7232 100.1 21.7232 100.1 23.3232V29.6232H102.1V23.1232C102.2 20.5232 100.7 18.7232 98.2 18.7232Z" fill="black"/>
           <path d="M109.4 27.8232L105.8 18.9232H103.6L108.4 30.5232C108.1 31.4232 107.7 31.7232 106.7 31.7232H104.2V33.7232H106.7C108.5 33.7232 109.5 32.9232 110.2 31.1232L114.9 18.9232H112.8L109.4 27.8232Z" fill="black"/>
           </svg> </a>
-        </div>
     </footer>
+  </div>
   </body>
 
 </html>
