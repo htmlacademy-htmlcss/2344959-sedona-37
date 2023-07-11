@@ -54,6 +54,7 @@ body {
   background-color: #82B3D3;
   text-decoration: none;
   text-transform: uppercase;
+  border: 0;
 }
 
 .page-container {
@@ -95,7 +96,6 @@ body {
   color: #000000;
   background-color: #ffffff;
   text-transform: capitalize;
-
 }
 
 .navigation-link {
@@ -107,6 +107,7 @@ body {
   background-color: #ffffff;
   text-transform: capitalize;
   padding: 20px 16px;
+  text-decoration: none;
 }
 
 .navigation-user {
@@ -290,7 +291,15 @@ body {
 }
 
 .page-footer {
-  width: 1200px;
+
+  display: flex;
+
+  height: 120px;
+  padding: 40px 70px 30px 70px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  align-self: stretch;
   color: #000000;
   background-color: #ffffff;
 }
@@ -301,8 +310,7 @@ body {
   font-size: 40px;
   line-height: 40px;
   text-transform: uppercase;
-  padding-left: 195px;
-  padding-right: 195px;
+
 }
 
 .footer-social-list {
@@ -310,6 +318,7 @@ body {
   flex-wrap: wrap;
   margin: 0;
   padding: 10px;
+
 }
 
 .footer-social-item {
@@ -366,6 +375,7 @@ body {
 }
 .catalog-products {
   margin: 70px 50px;
+  margin-bottom: 0;
   font-family: "PT Sans", sans-serif;
   color: #000000;
   font-size: 18px;
@@ -375,11 +385,23 @@ body {
 .catalog-filter {
 display: flex;
 }
+.button-search-hotel {
+display: flex;
+flex-direction: column;
+}
+.button .button-1 {
+width: 191px;
+height: 36px;
+}
+.button .button-2 {
+  width: 191px;
+  height: 36px;
+  background-color: none;
+}
 .sorting-container {
   display: flex;
   width: 1060px;
-
-  margin-bottom: 40;
+  margin-bottom: 40px;
   padding: 16px;
   color: #000000;
   background-color: #ffffff;
@@ -390,7 +412,15 @@ display: flex;
     margin-left: 70px;
   }
   .select-control {
-
+    width: 292px;
+    height: 49px;
+    padding: 14px 20px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .buttons {
+    margin-right: 0;
+    height: 48px;
   }
 .catalog-products-title {
   font-family: "PT Sans", sans-serif;
@@ -401,8 +431,9 @@ display: flex;
   text-transform: uppercase;
 }
 .hotel-list {
-  display: flex;
-  flex-wrap: wrap;
+display: flex;
+flex-wrap: wrap;
+margin-bottom: 80px;
 }
 .hotel-list-title {
   font-family: "PT Sans", sans-serif;
@@ -412,21 +443,70 @@ display: flex;
   line-height: 28px;
 }
 .hotel-card {
+  display: flex;
+  flex-direction: column;
   width: 340px;
+  padding: 20px;
 }
+.hotel-card-button {
+  width: 140px;
+  margin-right: 20px;
+  color: #ffffff;
+  background-color: #756157;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  padding: 8px;
+}
+.hotel-card-button-iwant {
+width: 140px;
+}
+.button-current {
+background-color: #7DB54F;
+font-family: inherit;
+font-size: 16px;
+line-height: 20px;
+font-weight: 700;
+text-align: center;
+color: #ffffff;
+text-decoration: none;
+text-transform: uppercase;
+border: 0;
+}
+.prace {
+width: 140px;
+
+}
+.hotel {
+width: 140px;
+}
+
+.raiting {
+ background-color: #F2F2F2;
+ width: 140px;
+ text-align: center;
+ text-decoration: none;
+ text-transform: uppercase;
+ padding: 8px 22px;
+ margin-left: auto;
+  }
+.hotel-card-content {
+  display: flex;
+  flex-wrap: wrap;
+  }
 .pagination {
   display: flex;
   background-color: #ffffff;
   margin: 0;
   padding: 0;
   list-style-type: none;
+  margin-bottom: 60px;
 }
 .pagination-button {
   display: block;
   width: 60px;
   height: 60px;
   padding: 12px;
-
   align-content: center;
   justify-content: center;
   font-size: 20px;
