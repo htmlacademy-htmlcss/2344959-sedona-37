@@ -50,11 +50,16 @@
 
 
         <ul class="breadcrumbs list-reset">
-          <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="index.html">Главная</a>
+          <li class="breadcrumbs-item ">
+            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6.39282 0L0.392822 5.80006V12.0001H12.3928V5.80006L6.39282 0ZM11.3928 11.0001H1.39282V6.20005L6.39282 1.4L11.3928 6.20005V11.0001Z" fill="black"/>
+              <path d="M4.39282 10.0001H5.39282V7.50005H7.39282V10.0001H8.39282V6.50005H4.39282V10.0001Z" fill="black"/>
+              </svg>
+
+           <div class="visually-hidden"> <a class="breadcrumbs-link" href="index.html">Главная</a></div>
           </li>
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link">Каталог</a>
+            <a class="breadcrumbs-link">Гостиницы</a>
           </li>
         </ul>
 
@@ -123,15 +128,16 @@
 
       </div>
 
-      <section class="catalog-products">
-
+    <section class="catalog-products">
+        <div class="sorting-container">
         <h2 class="catalog-products-title">Найдено гостиниц:38</h2>
 
         <select class="select-control" aria-label="Сортировка">
+
           <option value="cheap">Сначала дешёвые</option>
         </select>
       <div>
-        <a href="#">
+        <a class="sorting-container-button" href="#">
         <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0_33548_951)">
           <path d="M4 0H0V6H4V0Z" fill="black"/>
@@ -181,7 +187,7 @@
               </svg>
             </a>
             </div>
-
+          </div>
 
         <ul class="hotel-list list-reset">
           <li class="hotel-card">
@@ -194,7 +200,7 @@
           </a>
           <p>Гостиница</p>
           <p>От 4000 ₽</p>
-          <a class="#" href="#">Подробнее</a>
+          <a class="hotel-card-button" href="#">Подробнее</a>
           <button class="button" type="button">В избранное</button>
           <p>
              <img src="images/stars-4.svg" alt="4 звезды">
@@ -210,7 +216,7 @@
           </a>
             <p>Гостиница</p>
             <p>От 5000 ₽</p>
-            <a class="#" href="#">Подробнее</a>
+            <a class="hotel-card-button" href="#">Подробнее</a>
             <button class="button" type="button">в избранном</button>
             <p><img src="images/stars-4.svg" alt="4 звезды">
             </p>
@@ -226,7 +232,7 @@
             </a>
               <p>Гостиница</p>
               <p>От 2500 ₽</p>
-              <a class="#" href="#">Подробнее</a>
+              <a class="hotel-card-button" href="#">Подробнее</a>
               <button class="button" type="button">В избранное</button>
               <p><img src="images/stars-3.svg" alt="3 звезды">
               </p>
@@ -242,7 +248,7 @@
               </a>
                 <p>Гостиница</p>
                 <p>От 1500 ₽</p>
-                <a class="#" href="#">Подробнее</a>
+                <a class="hotel-card-button" href="#">Подробнее</a>
                 <button class="button" type="button">В избранное</button>
               <p><img src="images/stars-2.svg" alt="2 звезды">
                 </p>
@@ -281,9 +287,7 @@
           </p>
             <button class="button" type="submit">Подписаться</button>
           </form>
-
           </section>
-
        </main>
 
        <footer class="page-footer">
