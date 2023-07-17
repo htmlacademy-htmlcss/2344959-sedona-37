@@ -35,7 +35,7 @@
               </svg>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Хочу сюда</a>
+            <a class="navigation-link a-iwant" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -43,7 +43,7 @@
 
     <main class="main-container main-inner">
 
-      <div class="inner-header-hotels">
+    <div class="inner-header-hotels">
 
       <header class="inner-header">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
@@ -51,12 +51,15 @@
 
         <ul class="breadcrumbs list-reset">
           <li class="breadcrumbs-item ">
-            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M6.39282 0L0.392822 5.80006V12.0001H12.3928V5.80006L6.39282 0ZM11.3928 11.0001H1.39282V6.20005L6.39282 1.4L11.3928 6.20005V11.0001Z" fill="black"/>
-              <path d="M4.39282 10.0001H5.39282V7.50005H7.39282V10.0001H8.39282V6.50005H4.39282V10.0001Z" fill="black"/>
+            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6.5 0.5L0.5 6.30006V12.5001H12.5V6.30006L6.5 0.5ZM11.5 11.5001H1.5V6.70005L6.5 1.9L11.5 6.70005V11.5001Z" fill="white"/>
+              <path d="M4.5 10.5001H5.5V8.00005H7.5V10.5001H8.5V7.00005H4.5V10.5001Z" fill="white"/>
               </svg>
 
-           <div class="visually-hidden"> <a class="breadcrumbs-link" href="index.html">Главная</a></div>
+
+           <div class="visually-hidden">
+            <a class="breadcrumbs-link" href="index.html">Главная</a>
+          </div>
           </li>
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link">Гостиницы</a>
@@ -122,8 +125,10 @@
           </li>
         </ul>
       </fieldset>
-          <button class="button" type="submit">Применить</button>
-          <button class="button" href="#">Сбросить</button>
+        <div class="button-search-hotel">
+          <button class="button button-1" type="submit">Применить</button>
+          <button class="button button-2" href="#">Сбросить</button>
+        </div>
         </form>
 
       </div>
@@ -135,8 +140,9 @@
         <select class="select-control" aria-label="Сортировка">
 
           <option value="cheap">Сначала дешёвые</option>
+          <option value="cheap">Сначала дорогие</option>
         </select>
-      <div>
+      <div class="buttons">
         <a class="sorting-container-button" href="#">
         <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0_33548_951)">
@@ -154,7 +160,7 @@
           </defs>
           </svg>
         </a>
-        <a href="#">
+        <a class="sorting-container-button" href="#">
           <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_47227_619)">
             <path d="M16 12H0V14H16V12Z" fill="black"/>
@@ -167,7 +173,7 @@
             </defs>
             </svg>
           </a>
-          <a href="#">
+          <a class="sorting-container-button" href="#">
             <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_33548_953)">
               <path d="M2 0H0V2H2V0Z" fill="black"/>
@@ -191,21 +197,28 @@
 
         <ul class="hotel-list list-reset">
           <li class="hotel-card">
+
           <a href="product.html">
           <img src="images/hotel-1.jpg" width="300" height="212" alt="гостиница Amara Resort & Spa">
           </a>
+
           <a href="product.html">
-          <h3 class="hotel-list-title">Amara Resort & Spa
-          </h3>
+          <h3 class="hotel-list-title">Amara Resort & Spa</h3>
           </a>
-          <p>Гостиница</p>
-          <p>От 4000 ₽</p>
+
+          <div class="hotel-card-content">
+          <p class="hotel">Гостиница</p>
+          <p class="price">4000 ₽</p>
+
           <a class="hotel-card-button" href="#">Подробнее</a>
-          <button class="button" type="button">В избранное</button>
-          <p>
-             <img src="images/stars-4.svg" alt="4 звезды">
-          </p>
-          <p>Рейтинг: 8.5</p>
+          <button class="hotel-card-button-iwant button" type="button">В избранное</button>
+
+
+          <p><img src="images/stars-4.svg" alt="4 звезды"></p>
+
+          <p class="raiting">Рейтинг: 8.5</p>
+
+        </div>
           </li>
           <li class="hotel-card">
           <a href="product.html">
@@ -214,14 +227,17 @@
           <a href="product.html">
             <h3 class="hotel-list-title">Villas at Poco Diablo</h3>
           </a>
-            <p>Гостиница</p>
-            <p>От 5000 ₽</p>
+          <div class="hotel-card-content">
+            <p class="hotel">Гостиница</p>
+            <p class="price">5000 ₽</p>
+
+
             <a class="hotel-card-button" href="#">Подробнее</a>
-            <button class="button" type="button">в избранном</button>
-            <p><img src="images/stars-4.svg" alt="4 звезды">
-            </p>
-            <p>Рейтинг: 9.2
-            </p>
+            <button class=" hotel-card-button-iwant button-current" type="button">в избранном</button>
+
+            <p><img src="images/stars-4.svg" alt="4 звезды"></p>
+            <p class="raiting">Рейтинг: 9.2</p>
+          </div>
             </li>
             <li class="hotel-card">
             <a href="product.html">
@@ -230,14 +246,17 @@
             <a href="product.html">
               <h3 class="hotel-list-title">Desert Quail Inn</h3>
             </a>
-              <p>Гостиница</p>
-              <p>От 2500 ₽</p>
+            <div class="hotel-card-content">
+              <p class="hotel">Гостиница</p>
+              <p class="price">2500 ₽</p>
+
+
               <a class="hotel-card-button" href="#">Подробнее</a>
-              <button class="button" type="button">В избранное</button>
-              <p><img src="images/stars-3.svg" alt="3 звезды">
-              </p>
-              <p>Рейтинг: 6.9
-              </p>
+              <button class="hotel-card-button-iwant button" type="button">В избранное</button>
+
+              <p><img src="images/stars-3.svg" alt="3 звезды"></p>
+              <p class="raiting">Рейтинг: 6.9</p>
+            </div>
               </li>
               <li class="hotel-card">
               <a href="product.html">
@@ -246,14 +265,20 @@
               <a href="product.html">
                 <h3 class="hotel-list-title">GreenTree Inn</h3>
               </a>
-                <p>Гостиница</p>
-                <p>От 1500 ₽</p>
+
+                <div class="hotel-card-content">
+
+                <p class="hotel">Гостиница</p>
+                <p class="price">1500 ₽</p>
+
+
                 <a class="hotel-card-button" href="#">Подробнее</a>
-                <button class="button" type="button">В избранное</button>
-              <p><img src="images/stars-2.svg" alt="2 звезды">
-                </p>
-                <p>Рейтинг: 5,0
-                </p>
+                <button class="hotel-card-button-iwant button" type="button">В избранное</button>
+
+
+                <p><img src="images/stars-2.svg" alt="2 звезды"></p>
+                <p class="raiting">Рейтинг: 5,0</p>
+              </div>
                </li>
                </ul>
 
@@ -270,6 +295,9 @@
           </li>
           <li class="pagination-item">
             <a class="pagination-button" href="#">4</span></a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-button pagination-points" href="#">...</span></a>
           </li>
           <li class="pagination-item">
             <a class="pagination-button" href="#">10</a>
@@ -291,7 +319,7 @@
        </main>
 
        <footer class="page-footer">
-        <div class="page-footer-container">
+
           <ul class="footer-social-list list-reset">
             <li class="footer-social-item">
               <svg width="24" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -312,7 +340,7 @@
           <address class="footer-contacts-address">
             <a class="footer-contacts-address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
           </address>
-          <a href="#"> <svg width="115" height="34" viewBox="0 0 115 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <a href="#"><svg width="115" height="34" viewBox="0 0 115 34" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 13.7232V16.3232H2.5V13.7232H0Z" fill="black"/>
             <path d="M11.6 5.32324C10 5.32324 8.8 6.02324 8 7.02324H7.9V0.823242H5.9V16.3232H7.9V11.0232C7.9 8.92324 9.2 7.42324 11.2 7.42324C13 7.42324 14.1 8.82324 14.1 10.6232V16.3232H16.1V10.2232C16.2 7.22324 14.3 5.32324 11.6 5.32324Z" fill="black"/>
             <path d="M26.6 5.62324H21.8V1.92324H19.8V5.72324H17.9V7.72324H19.8V13.7232C19.8 15.4232 20.8 16.4232 22.5 16.4232H26.6V14.4232H22.9C22.2 14.4232 21.8 14.0232 21.8 13.3232V7.62324H26.6V5.62324Z" fill="black"/>
@@ -326,7 +354,6 @@
             <path d="M98.2 18.7232C96.6 18.7232 95.3 19.5232 94.6 20.7232H94.5C93.9 19.5232 92.7 18.7232 91.1 18.7232C89.7 18.7232 88.6 19.4232 88 20.5232V19.0232H86.1V29.6232H88.1V24.2232C88.1 22.2232 89.1 20.8232 90.7 20.7232C92.2 20.7232 93.1 21.7232 93.1 23.3232V29.6232H95.1V24.0232C95.1 21.6232 96.5 20.7232 97.7 20.7232C99.2 20.7232 100.1 21.7232 100.1 23.3232V29.6232H102.1V23.1232C102.2 20.5232 100.7 18.7232 98.2 18.7232Z" fill="black"/>
             <path d="M109.4 27.8232L105.8 18.9232H103.6L108.4 30.5232C108.1 31.4232 107.7 31.7232 106.7 31.7232H104.2V33.7232H106.7C108.5 33.7232 109.5 32.9232 110.2 31.1232L114.9 18.9232H112.8L109.4 27.8232Z" fill="black"/>
             </svg> </a>
-          </div>
       </footer>
     </div>
   </body>
